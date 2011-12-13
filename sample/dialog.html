@@ -1,0 +1,469 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<!-- Mirrored from www.templateaccess.com/demos/adminskins/admintasia/dialog.php by HTTrack Website Copier/3.x [XR&CO'2010], Mon, 27 Jun 2011 06:26:06 GMT -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Admintasia v2</title>
+	<script type="text/javascript" src="resources/js/jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="resources/js/ui/ui.core.js"></script>
+	<script type="text/javascript" src="resources/js/superfish.js"></script>
+	<script type="text/javascript" src="resources/js/live_search.js"></script>
+	<script type="text/javascript" src="resources/js/tooltip.js"></script>
+	<script type="text/javascript" src="resources/js/cookie.js"></script>
+	<script type="text/javascript" src="resources/js/ui/ui.sortable.js"></script>
+	<script type="text/javascript" src="resources/js/ui/ui.draggable.js"></script>
+	<script type="text/javascript" src="resources/js/ui/ui.resizable.js"></script>
+	<script type="text/javascript" src="resources/js/ui/ui.dialog.js"></script>
+	<script type="text/javascript" src="resources/js/custom.js"></script>
+	
+	<link href="resources/css/ui/ui.base.css" rel="stylesheet" media="all" />
+
+	<link href="resources/css/themes/black_rose/ui.css" rel="stylesheet" title="style" media="all" />
+
+	<!--[if IE 6]>
+	<link href="css/ie6.css" rel="stylesheet" media="all" />
+	
+	<script src="js/pngfix.js"></script>
+	<script>
+	  /* Fix IE6 Transparent PNG */
+	  DD_belatedPNG.fix('.logo, ul#dashboard-buttons li a, .response-msg, #search-bar input');
+
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<div id="page_wrapper">
+		<div id="page-header">
+			<div id="page-header-wrapper">
+				<div id="top">
+					<a href="dashboard.html" class="logo" title="Admintasia V2.0">Admintasia V2.0</a>
+					<div class="welcome">
+						<span class="note">Welcome, <a href="#" title="Welcome, Horia Simon">Horia Simon</a></span>
+						<a class="btn ui-state-default ui-corner-all" href="#">
+							<span class="ui-icon ui-icon-wrench"></span>
+							Settings
+						</a>
+						<a class="btn ui-state-default ui-corner-all" href="#">
+							<span class="ui-icon ui-icon-person"></span>
+							My account
+						</a>
+						<a class="btn ui-state-default ui-corner-all" href="#">
+							<span class="ui-icon ui-icon-power"></span>
+							Logout
+						</a>						
+					</div>
+				</div>
+				<ul id="navigation">
+					<li>
+						<a href="dashboard.html" class="sf-with-ul">Dashboard</a>
+						<ul>
+							<li><a href="dashboard.html">Administration</a></li>
+							<li>
+								<a href="forms.html">Forms</a>
+								<ul>
+									<li><a href="validate.html">Form validation</a></li>
+									<li><a href="table_modal.html"><b>Add to table modal</b></a></li>
+									<li><a href="editinplace.html"><b>Edit in Place</b></a></li>
+									<li><a href="tinymce.html"><b>WYSIWYG Editor</b></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="tables.html">Tables</a>
+								<ul>
+									<li><a href="tables.html">Sortable Tables</a></li>
+									<li><a href="flexigrid.html"><b>FlexiGrid</b></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Widgets</a>
+								<ul>
+									<li><a href="accordion.html">Accordion</a></li>
+									<li><a href="flexigrid.html"><b>FlexiGrid</b></a></li>
+									<li><a href="editinplace.html"><b>Edit in Place</b></a></li>
+									<li><a href="tinymce.html"><b>WYSIWYG Editor</b></a></li>
+									<li><a href="charts.html"><b>Charts</b></a></li>
+									<li><a href="tabs.html">Tabs</a></li>
+									<li><a href="slider.html">Slider</a></li>
+									<li><a href="datepicker.html">Datepicker</a></li>
+									<li><a href="progress.html">Progress Bar</a></li>
+									<li><a href="dialog.html">Dialogs and Modals</a></li>
+									<li><a href="overlays.html">Overlays</a></li>
+									<li><a href="photo_manager.html">Photo Manager</a></li>
+									<li><a href="file_browser.html">File Browser</a></li>
+								</ul>
+							</li>
+							<li><a href="msg.html">Response Messages</a></li>
+							<li><a href="icons.html">Icons</a></li>
+							<li><a href="index.html">Login Page</a></li>
+							<li><a href="icons.html">Buttons and Elements</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="sf-with-ul">Unlimited Levels</a>
+						<ul>
+							<li>
+								<a href="#" class="sf-with-ul">Menu item 1</a>
+								<ul>
+									<li><a href="#">Subitem 1</a></li>
+									<li><a href="#">Subitem 2</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Menu item 2</a>
+							</li>
+							<li>
+								<a href="#">Menu item 3</a>
+							</li>
+							<li>
+								<a href="#" class="sf-with-ul">Menu item 4</a>
+								<ul>
+									<li><a href="#">Subitem 1</a></li>
+									<li>
+										<a href="#" class="sf-with-ul">Subitem 2</a>
+										<ul>
+											<li><a href="#">Subitem 1</a></li>
+											<li>
+												<a href="#" class="sf-with-ul">Subitem 2</a>
+												<ul>
+													<li><a href="#">Subitem 1</a></li>
+													<li>
+														<a href="#">Subitem 2</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="sf-with-ul">Menu item 5</a>
+								<ul>
+									<li><a href="#">Subitem 1</a></li>
+									<li><a href="#">Subitem 2</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Menu item 6</a>
+							</li>
+							<li>
+								<a href="#">Menu item 7</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="gallery.html">Photo Gallery</a></li>
+					<li>
+						<a href="#" class="sf-with-ul">Layout Options</a>
+						<ul>
+							<li>
+								<a href="three-columns-layout.html">Three columns</a>
+							</li>
+							<li>
+								<a href="two-column-layout.html">Two columns</a>
+							</li>
+							<li>
+								<a href="no-rounded.html">No rounded corners</a>
+							</li>
+							<li>
+								<a href="content_boxes.html">Available content boxes</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="sf-with-ul">Theme Options</a>
+						<ul>
+							<li>
+								<a href="page_left_sidebar.html">Page with left sidebar</a>
+							</li>
+							<li>
+								<a href="page_dynamic_sidebar.html">Page with dynamic sidebar</a>
+							</li>
+							<li>
+								<a href="#">Avaiable Themes</a>
+								<ul id="style-switcher">
+									<li>
+										<a class="set_theme" id="black_rose" href="#" title="Black Rose Theme">Black Rose Theme</a>
+									</li>
+									<li>
+										<a class="set_theme" id="gray_standard" href="#" title="Gray Standard Theme">Gray Standard Theme</a>
+									</li>
+									<li>
+										<a class="set_theme" id="gray_lightness" href="#" title="Gray Lightness Theme">Gray Lightness Theme</a>
+									</li>
+									<li>
+										<a class="set_theme" id="apple_pie" href="#" title="Apple Pie Theme">Apple Pie Theme</a>
+									</li>
+									<li>
+										<a class="set_theme" id="blueberry" href="#" title="Blueberry Theme">Blueberry Theme</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#"><i>Dummy Link</i></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="sf-with-ul">Widgets</a>
+						<ul>
+							<li><a href="accordion.html">Accordion</a></li>
+							<li><a href="flexigrid.html"><b>FlexiGrid</b></a></li>
+							<li><a href="editinplace.html"><b>Edit in Place</b></a></li>
+							<li><a href="tinymce.html"><b>WYSIWYG Editor</b></a></li>
+							<li><a href="charts.html"><b>Charts</b></a></li>
+							<li><a href="tabs.html">Tabs</a></li>
+							<li><a href="slider.html">Slider</a></li>
+							<li><a href="datepicker.html">Datepicker</a></li>
+							<li><a href="progress.html">Progress Bar</a></li>
+							<li><a href="dialog.html">Dialogs and Modals</a></li>
+							<li><a href="overlays.html">Overlays</a></li>
+							<li><a href="photo_manager.html">Photo Manager</a></li>
+							<li><a href="file_browser.html">File Browser</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div id="search-bar">
+					<form method="post" action="http://www.google.com/">
+						<input type="text" name="q" value="live search demo" />
+					</form>
+				</div>
+			</div>
+		</div>	<script type="text/javascript">
+	$(function() {
+		$("#dialog").dialog({
+			bgiframe: true,
+			resizable: false,
+			height:120,
+			width:650,
+			modal: true,
+			overlay: {
+				backgroundColor: '#000',
+				opacity: 0.5
+			},
+			buttons: {
+				'Delete all items in recycle bin': function() {
+					$(this).dialog('close');
+				},
+				Cancel: function() {
+					$(this).dialog('close');
+				}
+			}
+		});
+	});
+	</script>
+
+	
+		<div id="sub-nav"><div class="page-title">
+			<h1>Auto Open Modal</h1>
+			<span>This is a breadcrumb example</span>
+		</div>
+		<div id="top-buttons">
+			<a id="dialog_link" class="btn ui-state-default ui-corner-all" href="#">
+				<span class="ui-icon ui-icon-newwin"></span>
+				Dialog Window
+			</a>
+			<a class="btn ui-state-default ui-corner-all" id="drop" href="#drop_down">
+				<span class="ui-icon ui-icon-carat-2-n-s"></span>
+				DropDown Menu
+			</a>
+			<div id="drop_down" class="hidden">
+				<ul>
+					<li><a href="#">Google</a></li>
+					<li><a href="#">Yahoo</a></li>
+					<li><a href="#">MSN</a></li>
+					<li><a href="#">Ask</a></li>
+					<li><a href="#">AOL</a></li>
+				</ul>
+			</div>
+			<a id="modal_confirmation_link" class="btn ui-state-default ui-corner-all" href="#">
+				<span class="ui-icon ui-icon-grip-dotted-horizontal"></span>
+				Modal Confirmation
+			</a>
+		</div>
+			<div id="dialog" title="Dialog Title">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div id="modal_confirmation" title="An example modal title ?">
+				<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+</div>
+		<div id="page-layout"><div id="page-content">
+			<div id="page-content-wrapper">
+				<div class="inner-page-title">
+					<h3>Example Title</h3>
+				</div>
+				<div class="content-box">
+					If you would like to remove all rounded corners from a page, just add class="no-rounded" to the body tag. That is all !
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+
+					<p> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+
+					<p> Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+
+					<p> Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, </p>
+<div id="dialog" title="Empty the recycle bin?">
+	<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These items will be permanently deleted and cannot be recovered. Are you sure?</p>
+</div>
+
+<!-- Sample page content to illustrate the layering of the dialog -->
+<div class="hiddenInViewSource" style="padding:20px;">
+	<p>Sed vel diam id libero <a href="http://example.com/">rutrum convallis</a>. Donec aliquet leo vel magna. Phasellus rhoncus faucibus ante. Etiam bibendum, enim faucibus aliquet rhoncus, arcu felis ultricies neque, sit amet auctor elit eros a lectus.</p>
+	<form>
+
+		<input value="text input" /><br />
+		<input type="checkbox" />checkbox<br />
+		<input type="radio" />radio<br />
+		<select>
+			<option>select</option>
+		</select><br /><br />
+		<textarea>textarea</textarea><br />
+
+	</form>
+</div><!-- End sample page content -->
+
+				</div>
+			<div class="clear"></div>
+					<div id="sidebar">
+			<div class="sidebar-content">
+				<a id="close_sidebar" class="btn ui-state-default full-link ui-corner-all" href="#drill">
+					<span class="ui-icon ui-icon-circle-arrow-e"></span>
+					Close Sidebar
+				</a>
+				<a id="open_sidebar" class="btn tooltip ui-state-default full-link icon-only ui-corner-all" title="Open Sidebar" href="#"><span class="ui-icon ui-icon-circle-arrow-w"></span></a>
+				<div class="hide_sidebar">
+					<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+						<div class="portlet-header ui-widget-header">Theme Switcher<span class="ui-icon ui-icon-circle-arrow-s"></span></div>
+						<div class="portlet-content">
+							<ul id="style-switcher" class="side-menu">
+								<li>
+									<a class="set_theme" id="black_rose" href="#" title="Black Rose Theme">Black Rose Theme</a>
+								</li>
+								<li>
+									<a class="set_theme" id="gray_standard" href="#" title="Gray Standard Theme">Gray Standard Theme</a>
+								</li>
+								<li>
+									<a class="set_theme" id="gray_lightness" href="#" title="Gray Lightness Theme">Gray Lightness Theme</a>
+								</li>
+								<li>
+									<a class="set_theme" id="apple_pie" href="#" title="Apple Pie Theme">Apple Pie Theme</a>
+								</li>
+								<li>
+									<a class="set_theme" id="blueberry" href="#" title="Blueberry Theme">Blueberry Theme</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a class="fg-button btn ui-state-default full-link ui-corner-all" href="#">
+						<span class="ui-icon ui-state-zoomin"></span>
+						Example Link
+					</a>
+					
+					<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+						<div class="portlet-header ui-widget-header">Change layout width</div>
+						<div class="portlet-content">
+							<ul class="side-menu layout-options">
+								<li>
+									What width would you like the page to have ?<br /><br />
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="" title="Switch to 100% width layout">Switch to <b>100%</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout90" title="Switch to 90% width layout">Switch to <b>90%</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout75" title="Switch to 75% width layout">Switch to <b>75%</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout980" title="Switch to 980px layout">Switch to <b>980px</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout1280" title="Switch to 1280px layout">Switch to <b>1280px</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout1400" title="Switch to 1400px layout">Switch to <b>1400px</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout1600" title="Switch to 1600px layout">Switch to <b>1600px</b> width</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					
+					<div class="box ui-widget ui-widget-content ui-corner-all">
+						<h3>Navigation</h3>
+						<div class="content">
+							<a class="btn ui-state-default full-link ui-corner-all" href="#">
+								<span class="ui-icon ui-icon-mail-closed"></span>
+								Dummy link
+							</a>
+							<a class="btn ui-state-default full-link ui-corner-all" href="#">
+								<span class="ui-icon ui-icon-arrowreturnthick-1-n"></span>
+								Dummy link
+							</a>
+							<a class="btn ui-state-default full-link ui-corner-all" href="#">
+								<span class="ui-icon ui-icon-scissors"></span>
+								Dummy link
+							</a>
+							<a class="btn ui-state-default full-link ui-corner-all" href="#">
+								<span class="ui-icon ui-icon-signal-diag"></span>
+								Dummy link
+							</a>
+							<a class="btn ui-state-default full-link ui-corner-all" href="#">
+								<span class="ui-icon ui-icon-alert"></span>
+								With icon and also quite large link
+							</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="other-box yellow-box ui-corner-all ui-corner-all">
+						<div class="cont tooltip ui-corner-all" title="Check out the sortable examples below !!">
+							<h3>Sortable Section:</h3>
+							<p>Below you will find a sortable area. Enjoy! Also a tooltip example. You can add tooltips for any html elements.</p>
+						</div>
+					</div>
+					<div class="side_sort">
+						<div class="box ui-widget ui-widget-content ui-corner-all">
+							<h3>Sortable 1</h3>
+							<div class="content">
+								Lorem ipsum dolor sic amet dixit tu.
+							</div>
+						</div>
+						<div class="box ui-widget ui-widget-content ui-corner-all">
+							<h3>Sortable 2</h3>
+							<div class="content">
+								Lorem ipsum dolor sic amet dixit tu.
+							</div>
+						</div>
+						<div class="box ui-widget ui-widget-content ui-corner-all">
+							<h3>Datepicker</h3>
+							<div class="content">
+								Lorem ipsum dolor sic amet dixit tu.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+		<a href="#" title="Home">Home</a> | 
+		<a href="#" title="Register">Register</a> | 
+		<a href="#" title="Members Login">Members Login</a> | 
+		<a href="#" title="About us">About us</a> | 
+		<a href="#" title="Example link">Example link</a>
+	</div>
+	<div id="copyright">
+		Website Administration by Admintasia, Licensed by <a href="http://www.webappskins.com/">WebAppSkins</a>
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from www.templateaccess.com/demos/adminskins/admintasia/dialog.php by HTTrack Website Copier/3.x [XR&CO'2010], Mon, 27 Jun 2011 06:26:06 GMT -->
+</html>

@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<!-- Mirrored from www.templateaccess.com/demos/adminskins/admintasia/photo_manager.php by HTTrack Website Copier/3.x [XR&CO'2010], Mon, 27 Jun 2011 06:26:06 GMT -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Admintasia v2</title>
+	<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+	<script type="text/javascript" src="js/ui/ui.core.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/live_search.js"></script>
+	<script type="text/javascript" src="js/tooltip.js"></script>
+	<script type="text/javascript" src="js/cookie.js"></script>
+	<script type="text/javascript" src="js/ui/ui.sortable.js"></script>
+	<script type="text/javascript" src="js/ui/ui.draggable.js"></script>
+	<script type="text/javascript" src="js/ui/ui.resizable.js"></script>
+	<script type="text/javascript" src="js/ui/ui.dialog.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	
+	<link href="css/ui/ui.base.css" rel="stylesheet" media="all" />
+
+	<link href="css/themes/black_rose/ui.css" rel="stylesheet" title="style" media="all" />
+
+	<!--[if IE 6]>
+	<link href="css/ie6.css" rel="stylesheet" media="all" />
+	
+	<script src="js/pngfix.js"></script>
+	<script>
+	  /* Fix IE6 Transparent PNG */
+	  DD_belatedPNG.fix('.logo, ul#dashboard-buttons li a, .response-msg, #search-bar input');
+
+	</script>
+	<![endif]-->
+</head>
+<body>
+	<div id="page_wrapper">
+		<div id="page-header">
+			<div id="page-header-wrapper">
+				<div id="top">
+					<a href="dashboard.html" class="logo" title="Admintasia V2.0">Admintasia V2.0</a>
+					<div class="welcome">
+						<span class="note">Welcome, <a href="#" title="Welcome, Horia Simon">Horia Simon</a></span>
+						<a class="btn ui-state-default ui-corner-all" href="#">
+							<span class="ui-icon ui-icon-wrench"></span>
+							Settings
+						</a>
+						<a class="btn ui-state-default ui-corner-all" href="#">
+							<span class="ui-icon ui-icon-person"></span>
+							My account
+						</a>
+						<a class="btn ui-state-default ui-corner-all" href="#">
+							<span class="ui-icon ui-icon-power"></span>
+							Logout
+						</a>						
+					</div>
+				</div>
+				<ul id="navigation">
+					<li>
+						<a href="dashboard.html" class="sf-with-ul">Dashboard</a>
+						<ul>
+							<li><a href="dashboard.html">Administration</a></li>
+							<li>
+								<a href="forms.html">Forms</a>
+								<ul>
+									<li><a href="validate.html">Form validation</a></li>
+									<li><a href="table_modal.html"><b>Add to table modal</b></a></li>
+									<li><a href="editinplace.html"><b>Edit in Place</b></a></li>
+									<li><a href="tinymce.html"><b>WYSIWYG Editor</b></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="tables.html">Tables</a>
+								<ul>
+									<li><a href="tables.html">Sortable Tables</a></li>
+									<li><a href="flexigrid.html"><b>FlexiGrid</b></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Widgets</a>
+								<ul>
+									<li><a href="accordion.html">Accordion</a></li>
+									<li><a href="flexigrid.html"><b>FlexiGrid</b></a></li>
+									<li><a href="editinplace.html"><b>Edit in Place</b></a></li>
+									<li><a href="tinymce.html"><b>WYSIWYG Editor</b></a></li>
+									<li><a href="charts.html"><b>Charts</b></a></li>
+									<li><a href="tabs.html">Tabs</a></li>
+									<li><a href="slider.html">Slider</a></li>
+									<li><a href="datepicker.html">Datepicker</a></li>
+									<li><a href="progress.html">Progress Bar</a></li>
+									<li><a href="dialog.html">Dialogs and Modals</a></li>
+									<li><a href="overlays.html">Overlays</a></li>
+									<li><a href="photo_manager.html">Photo Manager</a></li>
+									<li><a href="file_browser.html">File Browser</a></li>
+								</ul>
+							</li>
+							<li><a href="msg.html">Response Messages</a></li>
+							<li><a href="icons.html">Icons</a></li>
+							<li><a href="index.html">Login Page</a></li>
+							<li><a href="icons.html">Buttons and Elements</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="sf-with-ul">Unlimited Levels</a>
+						<ul>
+							<li>
+								<a href="#" class="sf-with-ul">Menu item 1</a>
+								<ul>
+									<li><a href="#">Subitem 1</a></li>
+									<li><a href="#">Subitem 2</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Menu item 2</a>
+							</li>
+							<li>
+								<a href="#">Menu item 3</a>
+							</li>
+							<li>
+								<a href="#" class="sf-with-ul">Menu item 4</a>
+								<ul>
+									<li><a href="#">Subitem 1</a></li>
+									<li>
+										<a href="#" class="sf-with-ul">Subitem 2</a>
+										<ul>
+											<li><a href="#">Subitem 1</a></li>
+											<li>
+												<a href="#" class="sf-with-ul">Subitem 2</a>
+												<ul>
+													<li><a href="#">Subitem 1</a></li>
+													<li>
+														<a href="#">Subitem 2</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="sf-with-ul">Menu item 5</a>
+								<ul>
+									<li><a href="#">Subitem 1</a></li>
+									<li><a href="#">Subitem 2</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Menu item 6</a>
+							</li>
+							<li>
+								<a href="#">Menu item 7</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="gallery.html">Photo Gallery</a></li>
+					<li>
+						<a href="#" class="sf-with-ul">Layout Options</a>
+						<ul>
+							<li>
+								<a href="three-columns-layout.html">Three columns</a>
+							</li>
+							<li>
+								<a href="two-column-layout.html">Two columns</a>
+							</li>
+							<li>
+								<a href="no-rounded.html">No rounded corners</a>
+							</li>
+							<li>
+								<a href="content_boxes.html">Available content boxes</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="sf-with-ul">Theme Options</a>
+						<ul>
+							<li>
+								<a href="page_left_sidebar.html">Page with left sidebar</a>
+							</li>
+							<li>
+								<a href="page_dynamic_sidebar.html">Page with dynamic sidebar</a>
+							</li>
+							<li>
+								<a href="#">Avaiable Themes</a>
+								<ul id="style-switcher">
+									<li>
+										<a class="set_theme" id="black_rose" href="#" title="Black Rose Theme">Black Rose Theme</a>
+									</li>
+									<li>
+										<a class="set_theme" id="gray_standard" href="#" title="Gray Standard Theme">Gray Standard Theme</a>
+									</li>
+									<li>
+										<a class="set_theme" id="gray_lightness" href="#" title="Gray Lightness Theme">Gray Lightness Theme</a>
+									</li>
+									<li>
+										<a class="set_theme" id="apple_pie" href="#" title="Apple Pie Theme">Apple Pie Theme</a>
+									</li>
+									<li>
+										<a class="set_theme" id="blueberry" href="#" title="Blueberry Theme">Blueberry Theme</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#"><i>Dummy Link</i></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="sf-with-ul">Widgets</a>
+						<ul>
+							<li><a href="accordion.html">Accordion</a></li>
+							<li><a href="flexigrid.html"><b>FlexiGrid</b></a></li>
+							<li><a href="editinplace.html"><b>Edit in Place</b></a></li>
+							<li><a href="tinymce.html"><b>WYSIWYG Editor</b></a></li>
+							<li><a href="charts.html"><b>Charts</b></a></li>
+							<li><a href="tabs.html">Tabs</a></li>
+							<li><a href="slider.html">Slider</a></li>
+							<li><a href="datepicker.html">Datepicker</a></li>
+							<li><a href="progress.html">Progress Bar</a></li>
+							<li><a href="dialog.html">Dialogs and Modals</a></li>
+							<li><a href="overlays.html">Overlays</a></li>
+							<li><a href="photo_manager.html">Photo Manager</a></li>
+							<li><a href="file_browser.html">File Browser</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div id="search-bar">
+					<form method="post" action="http://www.google.com/">
+						<input type="text" name="q" value="live search demo" />
+					</form>
+				</div>
+			</div>
+		</div>		<script type="text/javascript" src="js/ui/ui.draggable.js"></script>
+		<script type="text/javascript" src="js/ui/ui.droppable.js"></script>
+		<script type="text/javascript" src="js/ui/ui.resizable.js"></script>
+		<script type="text/javascript" src="js/ui/ui.dialog.js"></script>
+
+		<style type="text/css">
+			#gallery { float: left; width: 45%; min-height: 12em; } * html #gallery { height: 12em; } /* IE6 */
+			.gallery.custom-state-active { background: #eee; }
+			.gallery { padding:5px; }
+			.gallery h5 { margin:0 0 0.4em; }
+			.gallery li { float: left; width: 96px; padding: 0.4em; margin: 0 0.4em 0.4em 0; text-align: center; }
+			#trash .ui-draggable h5 { display:none;margin: 0 0 0.4em; cursor: move; }
+			.gallery li a { float: right; }
+			.gallery li a.ui-icon-zoomin { float: left; }
+			.gallery li img { width: 100%; cursor: move; }
+
+			#trash { float:right;width: 52%;min-height: 18em;} * html #trash { height: 18em; } /* IE6 */
+		</style>
+		<script type="text/javascript">
+			$(function() {
+				// there's the gallery and the trash
+				var $gallery = $('#gallery'), $trash = $('#trash');
+
+				// let the gallery items be draggable
+				$('li',$gallery).draggable({
+					cancel: 'a.ui-icon',// clicking an icon won't initiate dragging
+					revert: 'invalid', // when not dropped, the item will revert back to its initial position
+					containment: $('#demo-frame').length ? '#demo-frame' : 'document', // stick to demo-frame if present
+					helper: 'clone',
+					cursor: 'move'
+				});
+
+				// let the trash be droppable, accepting the gallery items
+				$trash.droppable({
+					accept: '#gallery > li',
+					activeClass: 'ui-state-highlight',
+					drop: function(ev, ui) {
+						deleteImage(ui.draggable);
+					}
+				});
+
+				// let the gallery be droppable as well, accepting items from the trash
+				$gallery.droppable({
+					accept: '#trash li',
+					activeClass: 'custom-state-active',
+					drop: function(ev, ui) {
+						recycleImage(ui.draggable);
+					}
+				});
+
+				// image deletion function
+				var recycle_icon = '<a href="link/to/recycle/script/when/we/have/js/off" title="Recycle this image" class="ui-icon ui-icon-refresh">Recycle image</a>';
+				function deleteImage($item) {
+					$item.fadeOut(function() {
+						var $list = $('ul',$trash).length ? $('ul',$trash) : $('<ul class="gallery ui-helper-reset"/>').appendTo($trash);
+
+						$item.find('a.ui-icon-trash').remove();
+						$item.append(recycle_icon).appendTo($list).fadeIn(function() {
+							$item.animate({ width: '48px' }).find('img').animate({ height: '36px' });
+						});
+					});
+				}
+
+				// image recycle function
+				var trash_icon = '<a href="link/to/trash/script/when/we/have/js/off" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>';
+				function recycleImage($item) {
+					$item.fadeOut(function() {
+						$item.find('a.ui-icon-refresh').remove();
+						$item.css('width','96px').append(trash_icon).find('img').css('height','72px').end().appendTo($gallery).fadeIn();
+					});
+				}
+
+				// image preview function, demonstrating the ui.dialog used as a modal window
+				function viewLargerImage($link) {
+					var src = $link.attr('href');
+					var title = $link.siblings('img').attr('alt');
+					var $modal = $('img[src$="'+src+'"]');
+
+					if ($modal.length) {
+						$modal.dialog('open')
+					} else {
+						var img = $('<img alt="'+title+'" width="384" height="288" style="display:none;padding: 8px;" />')
+							.attr('src',src).appendTo('body');
+						setTimeout(function() {
+							img.dialog({
+									title: title,
+									width: 515,
+									modal: true
+								});
+						}, 1);
+					}
+				}
+
+				// resolve the icons behavior with event delegation
+				$('ul.gallery > li').click(function(ev) {
+					var $item = $(this);
+					var $target = $(ev.target);
+
+					if ($target.is('a.ui-icon-trash')) {
+						deleteImage($item);
+					} else if ($target.is('a.ui-icon-zoomin')) {
+						viewLargerImage($target);
+					} else if ($target.is('a.ui-icon-refresh')) {
+						recycleImage($item);
+					}
+
+					return false;
+				});
+			});
+		</script>
+
+
+		<div id="sub-nav"><div class="page-title">
+			<h1>Photo Manager</h1>
+			<span><a href="#" title="Others">Others</a> > <a href="#" title="Gallery">Gallery</a> > Photo Manager</span>
+		</div>
+		<div id="top-buttons">
+			<a id="dialog_link" class="btn ui-state-default ui-corner-all" href="#">
+				<span class="ui-icon ui-icon-newwin"></span>
+				Dialog Window
+			</a>
+			<a class="btn ui-state-default ui-corner-all" id="drop" href="#drop_down">
+				<span class="ui-icon ui-icon-carat-2-n-s"></span>
+				DropDown Menu
+			</a>
+			<div id="drop_down" class="hidden">
+				<ul>
+					<li><a href="#">Google</a></li>
+					<li><a href="#">Yahoo</a></li>
+					<li><a href="#">MSN</a></li>
+					<li><a href="#">Ask</a></li>
+					<li><a href="#">AOL</a></li>
+				</ul>
+			</div>
+			<a id="modal_confirmation_link" class="btn ui-state-default ui-corner-all" href="#">
+				<span class="ui-icon ui-icon-grip-dotted-horizontal"></span>
+				Modal Confirmation
+			</a>
+		</div>
+			<div id="dialog" title="Dialog Title">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+			<div id="modal_confirmation" title="An example modal title ?">
+				<p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+</div>
+		<div id="page-layout"><div id="page-content">
+			<div id="page-content-wrapper">
+				<div class="inner-page-title">
+					<h3>A gallery example</h3>
+				</div>
+				<div class="content-box">
+					<div class="demo ui-widget ui-helper-clearfix">
+			
+						<ul id="gallery" class="gallery ui-helper-reset ui-helper-clearfix">
+							<li class="ui-widget-content ui-corner-tr">
+								<h5 class="ui-widget-header">High Tatras</h5>
+								<img src="../../../../farm4.static.flickr.com/3261/2538183196_8baf9a8015_s.jpg" alt="The peaks of High Tatras" width="96" height="72" />
+								<a href="../../../../farm4.static.flickr.com/3261/2538183196_8baf9a8015.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+			
+								<a href="link/to/trash/script/when/we/have/js/off.html" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+							</li>
+							<li class="ui-widget-content ui-corner-tr">
+								<h5 class="ui-widget-header">High Tatras 2</h5>
+								<img src="../../../../farm4.static.flickr.com/3205/2538164270_4369bbdd23_s.jpg" alt="The chalet at the Green mountain lake" width="96" height="72" />
+								<a href="../../../../farm4.static.flickr.com/3205/2538164270_4369bbdd23.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+								<a href="link/to/trash/script/when/we/have/js/off.html" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+			
+							</li>
+							<li class="ui-widget-content ui-corner-tr">
+								<h5 class="ui-widget-header">High Tatras 3</h5>
+								<img src="../../../../farm3.static.flickr.com/2167/2082738157_436d1eb280_s.jpg" alt="Planning the ascent" width="96" height="72" />
+								<a href="../../../../farm3.static.flickr.com/2167/2082738157_436d1eb280.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+								<a href="link/to/trash/script/when/we/have/js/off.html" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+							</li>
+			
+							<li class="ui-widget-content ui-corner-tr">
+								<h5 class="ui-widget-header">High Tatras 4</h5>
+								<img src="../../../../farm3.static.flickr.com/2342/2083508720_fa906f685e_s.jpg" alt="On top of Kozi kopka" width="96" height="72" />
+								<a href="../../../../farm3.static.flickr.com/2342/2083508720_fa906f685e.jpg" title="View larger image" class="ui-icon ui-icon-zoomin">View larger</a>
+								<a href="link/to/trash/script/when/we/have/js/off.html" title="Delete this image" class="ui-icon ui-icon-trash">Delete image</a>
+							</li>
+						</ul>
+			
+						<div id="trash" class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+							<div class="portlet-header ui-widget-header">
+								Shopping
+								<span class="ui-icon ui-icon-circle-arrow-s"></span>
+							</div>
+						</div>
+			
+					</div>
+				</div>
+				<div class="clearfix"></div>
+						<div id="sidebar">
+			<div class="sidebar-content">
+				<a id="close_sidebar" class="btn ui-state-default full-link ui-corner-all" href="#drill">
+					<span class="ui-icon ui-icon-circle-arrow-e"></span>
+					Close Sidebar
+				</a>
+				<a id="open_sidebar" class="btn tooltip ui-state-default full-link icon-only ui-corner-all" title="Open Sidebar" href="#"><span class="ui-icon ui-icon-circle-arrow-w"></span></a>
+				<div class="hide_sidebar">
+					<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+						<div class="portlet-header ui-widget-header">Theme Switcher<span class="ui-icon ui-icon-circle-arrow-s"></span></div>
+						<div class="portlet-content">
+							<ul id="style-switcher" class="side-menu">
+								<li>
+									<a class="set_theme" id="black_rose" href="#" title="Black Rose Theme">Black Rose Theme</a>
+								</li>
+								<li>
+									<a class="set_theme" id="gray_standard" href="#" title="Gray Standard Theme">Gray Standard Theme</a>
+								</li>
+								<li>
+									<a class="set_theme" id="gray_lightness" href="#" title="Gray Lightness Theme">Gray Lightness Theme</a>
+								</li>
+								<li>
+									<a class="set_theme" id="apple_pie" href="#" title="Apple Pie Theme">Apple Pie Theme</a>
+								</li>
+								<li>
+									<a class="set_theme" id="blueberry" href="#" title="Blueberry Theme">Blueberry Theme</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<a class="fg-button btn ui-state-default full-link ui-corner-all" href="#">
+						<span class="ui-icon ui-state-zoomin"></span>
+						Example Link
+					</a>
+					
+					<div class="portlet ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+						<div class="portlet-header ui-widget-header">Change layout width</div>
+						<div class="portlet-content">
+							<ul class="side-menu layout-options">
+								<li>
+									What width would you like the page to have ?<br /><br />
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="" title="Switch to 100% width layout">Switch to <b>100%</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout90" title="Switch to 90% width layout">Switch to <b>90%</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout75" title="Switch to 75% width layout">Switch to <b>75%</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout980" title="Switch to 980px layout">Switch to <b>980px</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout1280" title="Switch to 1280px layout">Switch to <b>1280px</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout1400" title="Switch to 1400px layout">Switch to <b>1400px</b> width</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);" id="layout1600" title="Switch to 1600px layout">Switch to <b>1600px</b> width</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					
+					
+					<div class="box ui-widget ui-widget-content ui-corner-all">
+						<h3>Navigation</h3>
+						<div class="content">
+							<a class="btn ui-state-default full-link ui-corner-all" href="#">
+								<span class="ui-icon ui-icon-mail-closed"></span>
+								Dummy link
+							</a>
+							<a class="btn ui-state-default full-link ui-corner-all" href="#">
+								<span class="ui-icon ui-icon-arrowreturnthick-1-n"></span>
+								Dummy link
+							</a>
+							<a class="btn ui-state-default full-link ui-corner-all" href="#">
+								<span class="ui-icon ui-icon-scissors"></span>
+								Dummy link
+							</a>
+							<a class="btn ui-state-default full-link ui-corner-all" href="#">
+								<span class="ui-icon ui-icon-signal-diag"></span>
+								Dummy link
+							</a>
+							<a class="btn ui-state-default full-link ui-corner-all" href="#">
+								<span class="ui-icon ui-icon-alert"></span>
+								With icon and also quite large link
+							</a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="other-box yellow-box ui-corner-all ui-corner-all">
+						<div class="cont tooltip ui-corner-all" title="Check out the sortable examples below !!">
+							<h3>Sortable Section:</h3>
+							<p>Below you will find a sortable area. Enjoy! Also a tooltip example. You can add tooltips for any html elements.</p>
+						</div>
+					</div>
+					<div class="side_sort">
+						<div class="box ui-widget ui-widget-content ui-corner-all">
+							<h3>Sortable 1</h3>
+							<div class="content">
+								Lorem ipsum dolor sic amet dixit tu.
+							</div>
+						</div>
+						<div class="box ui-widget ui-widget-content ui-corner-all">
+							<h3>Sortable 2</h3>
+							<div class="content">
+								Lorem ipsum dolor sic amet dixit tu.
+							</div>
+						</div>
+						<div class="box ui-widget ui-widget-content ui-corner-all">
+							<h3>Datepicker</h3>
+							<div class="content">
+								Lorem ipsum dolor sic amet dixit tu.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="clear"></div>			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<div id="footer">
+		<a href="#" title="Home">Home</a> | 
+		<a href="#" title="Register">Register</a> | 
+		<a href="#" title="Members Login">Members Login</a> | 
+		<a href="#" title="About us">About us</a> | 
+		<a href="#" title="Example link">Example link</a>
+	</div>
+	<div id="copyright">
+		Website Administration by Admintasia, Licensed by <a href="http://www.webappskins.com/">WebAppSkins</a>
+	</div>
+</div>
+</body>
+
+<!-- Mirrored from www.templateaccess.com/demos/adminskins/admintasia/photo_manager.php by HTTrack Website Copier/3.x [XR&CO'2010], Mon, 27 Jun 2011 06:26:23 GMT -->
+</html>
